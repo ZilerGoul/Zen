@@ -7,14 +7,24 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&display=swap');
 
-    body {
+    html, body {
       margin: 0;
-      font-family: 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
       background: linear-gradient(to bottom, #2e2a25, #1f1c1a);
+      font-family: 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
       color: #e8e6e3;
       line-height: 1.75;
       letter-spacing: 0.03em;
+      overscroll-behavior: none;
     }
+
+    body {
+      position: relative;
+    }
+
     .container {
       max-width: 740px;
       margin: 60px auto;
